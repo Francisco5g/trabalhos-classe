@@ -5,7 +5,7 @@ export default function LoginPage() {
   const router = useRouter();
 
   useEffect(() => {
-    // router.push("/app");
+    router.push("/app");
   }, []);
 
   return (

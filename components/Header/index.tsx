@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { FiGithub } from "react-icons/fi";
 
 export default function Header() {
+  const githubLink = "https://github.com/Francisco5g/trabalhos-classe";
   const links = [
     { title: "Mural", path: "/" },
     // { title: "Atividades", path: "/activities" },
@@ -27,7 +28,7 @@ export default function Header() {
       </nav>
 
       <div>
-        <Link passHref href={"#"}>
+        <Link passHref href={githubLink}>
           <a className="text-weak rounded-full hover:text-normal cursor-pointer duration-200">
             <FiGithub size={24} />
           </a>

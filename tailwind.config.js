@@ -8,11 +8,18 @@ module.exports = {
       white: "#FFFFFF",
       gray: "#888888",
       gray100: "#333",
+      transparent: "transparent",
+      blue: "#12A2E9",
+      pink: "#D946EF",
     },
     textColor: {
       white: "#FFFFFF",
       normal: "#FFFFFF",
       weak: "#888888",
+      transparent: "transparent",
+      blue: "#12A2E9",
+      pink: "#D946EF",
+      black: "#000000",
     },
     extend: {
       fontFamily: {

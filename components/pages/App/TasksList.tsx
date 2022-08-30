@@ -20,19 +20,25 @@ interface Props {
 export default function TasksList({ tasks }: Props) {
   return (
     <div className="w-full lg:pr-4 first:mt-0">
-      {tasks?.map(({ id, title, due, type, owner }) => (
-        <Link key={id} href={`/task/${id}`}>
-          <div className="mb-4 p-2 bg-black border-gray100 border rounded-md cursor-pointer flex flex-col duration-200 hover:border-white">
-            <div className="flex items-center">
+      {tasks?.map(({ id, title, due, type, owner, description }) => (
+        <Link key={id} href={`/app/task/${id}`}>
+          <div className="mb-4 bg-black border-gray100 border rounded-md cursor-pointer flex flex-col duration-200 hover:border-white">
+            <div className="flex items-center px-3 py-4 border-b border-gray100">
               <TaskIcon type={type} />
 
               <p>
-                <strong className="text-base text-white"> {title} </strong>
+                <strong className="text-base text-gradient"> {title} </strong>
                 adicionado por <span className="text-white"> {owner} </span>
               </p>
             </div>
 
-            <span className="mt-4"> {new Date(due).toLocaleDateString("pt-BR", { dateStyle: "medium" })} </span>
+            <div className="px-3 pb-3">
+              <p className="py-3 px-4"> {description.length === 0 ? "Sem descrição" : description} </p>
+
+              <p>
+                Para <span> {new Date(due).toLocaleDateString("pt-BR", { dateStyle: "medium" })} </span>
+              </p>
+            </div>
           </div>
         </Link>
       ))}

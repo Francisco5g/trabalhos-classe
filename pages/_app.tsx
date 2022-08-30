@@ -6,7 +6,7 @@ import Header from "../components/Header";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
-      <Header />
+      <Header blackList={["/"]} />
       <Component {...pageProps} />
     </Fragment>
   );

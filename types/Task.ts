@@ -4,4 +4,5 @@ export interface Task {
   due: string;
   type: "test" | "task";
   owner: string;
+  description: string;
 }

@@ -14,10 +14,7 @@ export default function Frame() {
     <div className="w-full md:max-w-lg xl:max-w-5xl shadow-normal rounded-lg">
       <div className="relative w-full h-40 md:h-56 xl:h-80 bg-frame bg-cover bg-center border-gray100 rounded-lg">
         <div className="w-full h-full border-gray100 rounded-lg bg-[linear-gradient(-180deg,transparent,#000)] flex flex-col justify-end px-4 py-3 md:px-8 md:py-6">
-          <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl">
-            Ensino Médio {getClassSeries()}
-            <sup>a</sup>
-          </h1>
+          <h1>Ensino Médio {getClassSeries()}ª</h1>
 
           <p className="indent-1">
             <span className="text-base"> EM{getClassSeries()}A - Dohms Capão </span>

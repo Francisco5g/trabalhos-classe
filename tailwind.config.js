@@ -31,6 +31,7 @@ module.exports = {
       },
       boxShadow: {
         normal: "0 0 0 1px #333",
+        box: "2px 8px 15px rgba(0, 0, 0, 1)",
       },
     },
   },

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Task } from "../../../types/Task";
+import { Task } from "../../../src/types/Task";
 
 import { BiBookContent } from "react-icons/bi";
 import { HiOutlineNewspaper } from "react-icons/hi";

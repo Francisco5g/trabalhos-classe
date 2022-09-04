@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { ParsedUrlQuery } from "querystring";
-import { supabase } from "../../../lib/supabase";
-import { Task } from "../../../types/Task";
+import { supabase } from "../../../src/lib/supabase";
+import { Task } from "../../../src/types/Task";
 
 interface Props {
   task: Task;

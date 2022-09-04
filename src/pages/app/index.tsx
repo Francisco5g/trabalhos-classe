@@ -1,8 +1,8 @@
 import type { GetStaticProps, NextPage as AppPage } from "next";
 import Head from "next/head";
 
-import { supabase } from "../../lib/supabase";
-import { Task } from "../../types/Task";
+import { supabase } from "../../src/lib/supabase";
+import { Task } from "../../src/types/Task";
 
 import Frame from "../../components/pages/App/Frame";
 import TasksList from "../../components/pages/App/TasksList";

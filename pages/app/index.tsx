@@ -25,7 +25,7 @@ const Home: AppPage<Props> = ({ tasks }) => {
         <Frame />
 
         <div className="my-2 relative">
-          <span className="text-xs"> Trabalhos e Provas </span>
+          <span className="text-xs"> Materiais </span>
         </div>
 
         <div className="w-full flex flex-row md:max-w-lg xl:max-w-5xl relative">
@@ -38,8 +38,8 @@ const Home: AppPage<Props> = ({ tasks }) => {
           <TasksList tasks={tasks?.data} />
 
           <div className="hidden lg:max-h-64 lg:flex w-56 border border-gray100 rounded-lg bg-black p-1 flex-col justify-center items-center">
-            <span> Atividades: {tasks.count} </span>
-            <span className="text-xs text-gradient"> Em breve mais </span>
+            <span> Total: {tasks.count} </span>
+            <span className="text-xs text-gradient"> Em breve </span>
           </div>
         </div>
       </div>

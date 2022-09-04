@@ -20,6 +20,7 @@ module.exports = {
       blue: "#12A2E9",
       pink: "#D946EF",
       black: "#000000",
+      red: "#CD5C5C",
     },
     extend: {
       fontFamily: {

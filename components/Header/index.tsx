@@ -16,7 +16,7 @@ export default function Header() {
   const currentPath = router.pathname;
   const links = [
     { title: "Mural", path: "/app" },
-    { title: "Atividades", path: "/app/activities" },
+    { title: "Materiais", path: "/app/materials" },
   ];
 
   function toggleDropdown() {
@@ -26,7 +26,7 @@ export default function Header() {
   return blackList.includes(currentPath) ? (
     <></>
   ) : (
-    <header className="bg-black  h-14 flex flex-row items-center px-6 md:px-8 lg:px-16 border-b-gray100 border-b">
+    <header className="bg-black h-14 flex flex-row items-center px-6 md:px-8 lg:px-16 border-b-gray100 border-b">
       <div className="border-dashed border-gray border-2 px-3 rounded-md">
         <span> Logo </span>
       </div>
